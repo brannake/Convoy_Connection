@@ -1,0 +1,159 @@
+header {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/golden_wheat_vector_background_set_523647.jpg);
+    text-align: center;
+    font-family: 'Shojumaru';
+    color: white;
+    font-size: 36px;
+}
+
+.side-bar {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/24/12/29/noodles-2256332_960_720.jpg);
+    background-size: cover;
+}
+
+
+.main-content {
+    color: black;
+    background-color: #FF4F00;
+    opacity: 0.85;
+    height: 400px;
+    overflow-y: auto;
+}
+
+
+#search-box {
+    background-color: #daa520;
+    color: black;
+    padding-left: 25px;    
+}
+
+#map {
+    height:190px;
+    width: 200px;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #fe040A;
+    text-align: center;
+    font-size: 36px;
+    color: white
+
+}
+
+body {
+    font-family: 'Roboto';
+    color: #650003;
+    background-image: url("https://static.pexels.com/photos/87390/chilli-pepper-sharp-spices-laos-87390.jpeg");
+    background-size: cover;
+}
+
+.side-bar {
+    width: 200px;
+}
+#no-results {
+    display: none;
+}
+
+img {
+    border-radius: 20px;
+
+  }
+
+.main-content {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/golden_wheat_vector_background_set_523647.jpg);
+    height: 400px !important;
+    overflow-y:auto;
+}
+
+
+.collapsible-header {
+    background-color: white;
+    background-size: cover;
+    opacity: .85;
+
+}
+
+#modal1 {
+
+    color: red;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+   
+}
+
+#google-review {
+
+    color: red;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    
+   } 
+
+
+.food-menu {
+    background-color: #ffd47e;
+    height: 300px;
+    overflow-y:auto;
+}
+
+.inputbox{
+    color:white;
+    background-color: blue;
+
+}
+
+div.zomatoRestaurantReview {
+    box-sizing: border-box;
+    border: 2px;
+    border-bottom: 2px;
+    margin-bottom: 2px;
+    
+}
+
+
+#input {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/24/12/29/noodles-2256332_960_720.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    padding-left: 25px;
+    
+}
+
+
+
+.hide-on-load {
+    display: none;
+}
+
+
+.onload-graphic {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.onload-div {
+    text-align: center;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 200px;
+    padding:20px;
+    font-family: 'Shojumaru';
+    background-color: white;
+}
+.onload-div:hover{
+    background-color: #4dd0e1;
+}
+
+
+
