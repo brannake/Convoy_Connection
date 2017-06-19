@@ -27,10 +27,11 @@ header {
 #search-box {
     border: inset;
     border-radius: 5px;
-    color: white;
+    color: grey;
     padding: 10px;
     text-align: center;
     width:260px;
+    background: white;
 }
 
 #map {
@@ -79,6 +80,8 @@ img {
     background-size: cover;
     font-family: Verdana, Geneva, sans-serif;
     opacity: 0.95;
+    border-radius: 60px;
+    padding: 30px;
 }
 
 .collapsible-body {
