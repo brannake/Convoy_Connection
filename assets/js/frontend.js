@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $( ".overall" ).fadeIn( 5000 )
 
     $('.modal').modal();
     $('.carousel').carousel();
