@@ -3,11 +3,11 @@ var markersArray = [];
 var APIKEY="AIzaSyAxH7sN6qUgyMhcb0qbVhC2DGRS22CFeAE"
 
 //Initializes the map and sets center and zoom, takes user location
-function initMap() {
+function initMap(latitude, longitude) {
     //Default map position is San Diego
     var userPosition = {
-        lat: 32.8242510000,
-        lng: -117.1542920000
+        lat: latitude,
+        lng: longitude
     }
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
@@ -31,7 +31,6 @@ function geoCoder(address) {
         url: "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query="+address+"&type=restaurant&key="+APIKEY,
         method: "GET"
     }).done(function(response) {
-        console.log(response);
         //Declares request, which holds data for subsequent API calls (default placeId for testing)
         var request = {
             placeId: "ChIJN1t_tDeuEmsRUsoyG83frY4",
@@ -63,7 +62,8 @@ function geoCoder(address) {
     });
 }
 
-function populateReviews(reviews){
+//Adds reviews to the page
+function populateReviews(reviews) {
     $("#google-review").html("");
     for (var i = 0; i < 5; i++) {
         var reviewPost = $("<div><img src='http://diylogodesigns.com/blog/wp-content/uploads/2016/04/google-logo-icon-PNG-Transparent-Background-150x150.png'></div><p></p>");
@@ -74,9 +74,6 @@ function populateReviews(reviews){
         $("#google-review").append(reviewPost,googleRating,googleUserName,googleDate,googleText);
         $("#google-review").append("<br/>")
     }
-
-
-
 }
 
 //Queries the Google Maps Places API, obtains detailed place response and adds to page
@@ -117,7 +114,13 @@ function getLocation() {
 
 //Callback function to store user position coordinates and initialize map
 function showPosition(position) {
-    initMap();
+    var userPosition = {
+        lat: 32.920125899999995,
+        lng: -117.10881489999998
+    }
+    userPosition.lat = position.coords.latitude;
+    userPosition.lng = position.coords.longitude;
+    initMap(userPosition.lat, userPosition.lng);
 }
 
 $(document).ready(function(){
@@ -127,7 +130,6 @@ $(document).ready(function(){
         geoCoder(address);
     });
 
-
     getLocation();
-    initMap();
+    initMap(32.920125899999995, -117.10881489999998);
 });
