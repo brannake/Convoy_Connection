@@ -82,6 +82,17 @@ img {
     opacity: 0.95;
     border-radius: 60px;
     padding: 30px;
+    width: 580px;
+}
+
+.collapsible-header.row {
+    margin: 10px;
+}
+
+.restaurants-collection {
+    border: 0px;
+    position: absolute;
+    left: 400px;
 }
 
 .collapsible-body {
@@ -92,6 +103,7 @@ img {
 
 #restaurant-men {
     text-align: center;
+    width: 580px;
 }
 
 #restaurant-reviews {
@@ -106,6 +118,9 @@ img {
     padding: 10px;
     border: solid 2px black;
     border-radius: 10px;  
+}
+.collapsilbe.body-row {
+    width: 580px;
 }
 
 #google-review {
@@ -169,14 +184,14 @@ div.zomatoRestaurantReview {
     width:50%;
 }
 
-@media only screen and (max-width: 1200px) {
-    #map {
-        width: 200px;
-    }
-}
-
 .stars {
     color:gold;
 }
 
+.col {
+    width: 10%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
 
