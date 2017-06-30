@@ -7,7 +7,7 @@ header {
 
 #top_header {
     position: relative;
-    left: -80px;
+    left: -220px;
 }
 
 .overall {
@@ -17,7 +17,7 @@ header {
 .carousel {
     visibility: hidden;
     position: fixed;
-    left: 850px;
+    left: 750px;
     top: 0px;
     width: 500px;
 }
@@ -42,15 +42,15 @@ header {
     width:260px;
     background: white;
     position: relative;
-    left: -90px;
+    left: -230px;
 }
 
 #map {
-    height:300px;
+    height:250px;
     width: 300px;
     position: relative;
     top: 100px;
-    left: 900px;
+    left: 826px;
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
@@ -106,7 +106,7 @@ img {
 .restaurants-collection {
     border: 0px;
     position: absolute;
-    left: 340px;
+    left: 200px;
 }
 
 .collapsible-body {
@@ -117,7 +117,7 @@ img {
 
 #restaurant-men {
     text-align: center;
-    width: 440px;
+    width: 500px;
     background: black;
 }
 
