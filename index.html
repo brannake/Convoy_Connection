@@ -19,7 +19,7 @@
 </head>
 <body>
 <header>
-    <div class="row">
+    <div class="row" id="top_header">
         Convoy Connection
     </div>
     <input placeholder="What do you want to eat?" id="search-box" type="text" class="validate">
@@ -27,10 +27,6 @@
 <!--Layout-->
 
 <div class="row overall">
-
-    <div class="col s3 side-bar">
-        <div id="map"></div>
-    </div>
     <div class="col s6 main-content" id="restaurantList">
         <ul class="collapsible restaurants-collection" data-collapsible="accordion">
             <li id="no-results"><h3 style="color: white;">No Results.  Try another one</h3></li>
@@ -44,6 +40,7 @@
             <a class="carousel-item"><img id="carousel_4" src="assets\images\Textured-Bamboo-Wallpaper.jpg"></a>
             <a class="carousel-item"><img id="carousel_5" src="assets\images\Textured-Bamboo-Wallpaper.jpg"></a>
         </div>
+        <div id="map"></div>
     </div>
 </div>
 

@@ -5,6 +5,11 @@ header {
     font-size: 36px;
 }
 
+#top_header {
+    position: relative;
+    left: -80px;
+}
+
 .overall {
     display: none;
 }
@@ -12,8 +17,9 @@ header {
 .carousel {
     visibility: hidden;
     position: fixed;
-    left: 450px;
-    top: 100px;
+    left: 850px;
+    top: 0px;
+    width: 500px;
 }
 
 .logo {
@@ -35,13 +41,16 @@ header {
     text-align: center;
     width:260px;
     background: white;
+    position: relative;
+    left: -90px;
 }
 
 #map {
     height:300px;
     width: 300px;
-    display: block;
     position: relative;
+    top: 100px;
+    left: 900px;
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
@@ -101,14 +110,15 @@ img {
 }
 
 .collapsible-body {
-    background-color:black;
     opacity: 50;
     color: whitesmoke;
+    border: 0px;
 }
 
 #restaurant-men {
     text-align: center;
-    width: 580px;
+    width: 440px;
+    background: black;
 }
 
 #restaurant-reviews {
@@ -198,4 +208,8 @@ div.zomatoRestaurantReview {
     margin-left: auto;
     left: auto;
     right: auto;
+}
+
+.col.s3 {
+    position: fixed;
 }
