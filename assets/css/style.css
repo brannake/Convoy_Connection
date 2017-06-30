@@ -11,6 +11,9 @@ header {
 
 .carousel {
     visibility: hidden;
+    position: fixed;
+    left: 450px;
+    top: 100px;
 }
 
 .logo {
@@ -58,6 +61,8 @@ body {
 
 .side-bar {
     width: 200px;
+    position: fixed;
+    top: 120px;
 }
 #no-results {
     display: none;
@@ -82,7 +87,7 @@ img {
     opacity: 0.95;
     border-radius: 60px;
     padding: 30px;
-    width: 580px;
+    width: 480px;
 }
 
 .collapsible-header.row {
@@ -92,7 +97,7 @@ img {
 .restaurants-collection {
     border: 0px;
     position: absolute;
-    left: 400px;
+    left: 340px;
 }
 
 .collapsible-body {
@@ -194,4 +199,3 @@ div.zomatoRestaurantReview {
     left: auto;
     right: auto;
 }
-
