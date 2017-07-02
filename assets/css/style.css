@@ -5,7 +5,7 @@ header {
     font-size: 36px;
     position: absolute;
     display: block;
-    left: 450px;
+    left: 488px;
     top: 20px;
 }
 
@@ -21,7 +21,7 @@ header {
 .carousel {
     visibility: hidden;
     position: fixed;
-    left: 750px;
+    left: 790px;
     top: 50px;
     width: 500px;
 }
@@ -54,7 +54,7 @@ header {
     width: 300px;
     position: relative;
     top: 350px;
-    left: 826px;
+    left: 834px;
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
@@ -107,6 +107,7 @@ img {
 
 .collapsible-header.row {
     margin: 10px;
+    margin-left: 38px;
 }
 
 .restaurants-collection {
@@ -243,4 +244,8 @@ div.zomatoRestaurantReview {
 
 .col.s4 {
     margin: 2px;
+}
+
+.col.s12 {
+    left: -10px;
 }

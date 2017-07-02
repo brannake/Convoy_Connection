@@ -84,10 +84,9 @@ function getDetails(request) {
     }).done(function(response) {
         var restaurantImages = [];
         //Assigns the photo URLs from the Google Maps API to array
-        for (i = 0; i < 7; i++) {
-            if (response.result.photos[i].photo_reference !== undefined && response.result.photos[i].height / response.result.photos[i].width < 1.2) {
+         for (i = 0; i < 12; i++) {
+            if (response.result.photos[i].photo_reference !== undefined && response.result.photos[i].height / response.result.photos[i].width < 1.3) {
                 restaurantImages.push(response.result.photos[i].photo_reference);
-                console.log(response.result.photos[i]);
             }
         };
 
