@@ -85,18 +85,19 @@ function getDetails(request) {
         var restaurantImages = [];
         //Assigns the photo URLs from the Google Maps API to array
         for (i = 0; i < 7; i++) {
-            if (response.result.photos[i].photo_reference !== undefined) {
+            if (response.result.photos[i].photo_reference !== undefined && response.result.photos[i].height / response.result.photos[i].width < 1.2) {
                 restaurantImages.push(response.result.photos[i].photo_reference);
+                console.log(response.result.photos[i]);
             }
         };
 
         //Grabs reviews from the Google Maps API and appends to the page
         var reviews = response.result.reviews;
-        populateReviews(reviews)
+        populateReviews(reviews);
         //Adds images to the page from images array
         for (i = 0; i < 5; i++) {
             var currentLoop = i+1;
-            $("#carousel_"+currentLoop).attr("src", "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference="+restaurantImages[i]+"&key=AIzaSyAxH7sN6qUgyMhcb0qbVhC2DGRS22CFeAE");
+            $("#carousel_"+currentLoop).attr("src", "https://maps.googleapis.com/maps/api/place/photo?maxheight=250&photoreference="+restaurantImages[i]+"&key=AIzaSyAxH7sN6qUgyMhcb0qbVhC2DGRS22CFeAE");
         };
     });
 }
