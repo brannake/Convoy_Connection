@@ -1,11 +1,15 @@
 # convoy-connection
- Convoy-Connection is a restaurant search app that displays the following:
+The best convoy app EVAH
+
+High Level
+
+ Convoy-connection is a restaurant search app that displays the following:
  
- 1.  Nearby restaurants and their location/address
- 2.  Reviews and images
- 3.  Menu items and prices
+ 1.  Yelp review
+ 2.  Location on the map
+ 3.  Trip Advisor review
  
- The user should also be able to pick  a pin on the map instead of putting it on the textbox.  Also this is strictly convoy so it should only show Convoy restaurants. Then displays the results.
+ The user should also be able to pick  a pin on the map instead of putting it on the textbox.  Also this is strictly convoy so it should only show Convoy restaurants. Then displays the results. What would be nice is if we can compare the ratings ( each api)
  
  Low Level
  
